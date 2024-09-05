@@ -39,13 +39,3 @@ print("Immutable List : Tuple\n")
 
 
 print("\nSummary: Looping can help computer more efficient to complete automates repeatitive tasks.")
-
-buffer_style_restaurant = ("Sushi", "Ramen", "Teriyaki", "Omu Rice", "Katsu-ton")
-print("\nOur restaurant offers: ")
-for food in buffer_style_restaurant:
-    print(food)
-
-buffer_style_restaurant = ("Sushi", "Tenpura", "Teriyaki", "Yakisoba", "Katsu-ton")
-print("\nRevised Menu: ")
-for food in buffer_style_restaurant:
-    print(food)
