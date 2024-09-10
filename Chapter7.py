@@ -35,7 +35,7 @@ print("While Looping")
 current_number = 1                    # 当前号码等于1
 while current_number < 5:             # 设定条件(1小于5), 如果结果是True就会一直循环，直到1大于5，或者...你电脑爆炸。
     print(current_number)             # 如果条件结果是True就一直print 号码1。
-    current_number += 1               # 每一次print 了号码后，把当前的数字加1，循环一次加一次1。循环5次后current number就会大于5。
+    current_number += 1               # 每一次print 了号码后，把当前的数字加1，循环一次加一次1。循环5次后current number就大于5。
 
 print("\n=========================================================\n")
 

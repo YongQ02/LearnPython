@@ -30,5 +30,30 @@
 #for name, response in responses.items():
 #    print(name + " would like to climb " + response + ".")
 
+print()
 
 
+def make_album(album_artist, album_title):
+    music_album = {album_artist: album_title}
+
+    return music_album
+
+
+print("\nEnter 'q' to Quit program.")
+decision = True
+
+while decision:
+    artist = input("\nEnter a album artist: ")
+
+    if artist == 'q':
+        decision = False
+        break
+
+    title = input("Enter a album title: ")
+
+    if title == 'q':
+        decision = False
+        break
+
+    musician = make_album(artist, title)
+    print(musician)
