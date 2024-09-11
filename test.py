@@ -33,12 +33,25 @@
 print()
 
 
-def sandwich_orders(*sandwiches):
+class Restaurant():
+    def __init__(self, restaurant_name, cuisine_type):
+        self.restaurant_name = restaurant_name
+        self.cuisine_type = cuisine_type
+        self.number_served = 0
 
-    print("\nYour ordered sandwiches are: ")
-    for sandwich in sandwiches:
-        print("- " + sandwich)
+    def set_number_served(self, customer_number):
+        if customer_number >= self.number_served:
+            self.number_served = customer_number
+        else:
+            print("You don't have the ability to turn back time !")
+
+    def increment_number_served(self, number):
+        self.number_served += number
 
 
-sandwich_orders('Beef Sandwich', 'Avocado Sandwich', 'Chicken Sandwich')
-sandwich_orders('Classic Sandwich', 'Ham Sandwich')
+restaurant = Restaurant("mc donald", "french fries")
+print("\nThe restaurant has served " + str(restaurant.number_served) + " customer today.")
+restaurant.set_number_served(23)
+print("\nAfter 1 hour, the restaurant has served " + str(restaurant.number_served) + " customers today.")
+restaurant.increment_number_served(50)
+print("After 3 hours, the restaurant now has served " + str(restaurant.number_served) + " customers.")
