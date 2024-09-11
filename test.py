@@ -33,27 +33,12 @@
 print()
 
 
-def make_album(album_artist, album_title):
-    music_album = {album_artist: album_title}
+def sandwich_orders(*sandwiches):
 
-    return music_album
+    print("\nYour ordered sandwiches are: ")
+    for sandwich in sandwiches:
+        print("- " + sandwich)
 
 
-print("\nEnter 'q' to Quit program.")
-decision = True
-
-while decision:
-    artist = input("\nEnter a album artist: ")
-
-    if artist == 'q':
-        decision = False
-        break
-
-    title = input("Enter a album title: ")
-
-    if title == 'q':
-        decision = False
-        break
-
-    musician = make_album(artist, title)
-    print(musician)
+sandwich_orders('Beef Sandwich', 'Avocado Sandwich', 'Chicken Sandwich')
+sandwich_orders('Classic Sandwich', 'Ham Sandwich')
