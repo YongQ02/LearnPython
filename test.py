@@ -30,28 +30,21 @@
 #for name, response in responses.items():
 #    print(name + " would like to climb " + response + ".")
 
-print()
+"""
+file_path = 'C:\LearnPython\Python-Crash-Course\learningpython.txt'
 
+enter_name = True
 
-class Restaurant():
-    def __init__(self, restaurant_name, cuisine_type):
-        self.restaurant_name = restaurant_name
-        self.cuisine_type = cuisine_type
-        self.number_served = 0
+while enter_name:
+    guest_name = input("Enter your name, or enter 'q' to quit: ")
+    if guest_name == 'q':
+        enter_name = False
+    else:
+        print("\nHi, welcome ! " + guest_name)
+        with open(file_path, 'a') as text_file:
+            text_file.write("\nAccess History: " + guest_name)
+            print("Your name has successfully record to learning python text file.\n")
 
-    def set_number_served(self, customer_number):
-        if customer_number >= self.number_served:
-            self.number_served = customer_number
-        else:
-            print("You don't have the ability to turn back time !")
+print("\nSee you next Time !")
+"""
 
-    def increment_number_served(self, number):
-        self.number_served += number
-
-
-restaurant = Restaurant("mc donald", "french fries")
-print("\nThe restaurant has served " + str(restaurant.number_served) + " customer today.")
-restaurant.set_number_served(23)
-print("\nAfter 1 hour, the restaurant has served " + str(restaurant.number_served) + " customers today.")
-restaurant.increment_number_served(50)
-print("After 3 hours, the restaurant now has served " + str(restaurant.number_served) + " customers.")
