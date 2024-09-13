@@ -1,7 +1,7 @@
-# Chapter 10: Files and Exceptions
+# Chapter 10: Files and Exceptions - Part I [Files]
 
 print()
-print("Chapter 10: Files and Exceptions")
+print("Chapter 10: Files and Exceptions - Part I [Files]")
 print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n")
 
 # To do any work with a file, first need to open the file to access it.

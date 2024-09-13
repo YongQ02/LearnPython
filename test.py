@@ -48,3 +48,17 @@ while enter_name:
 print("\nSee you next Time !")
 """
 
+
+def open_files(filename):
+    try:
+        with open(filename) as file_obj:
+            contents = file_obj.read()
+    except FileNotFoundError:
+        pass
+    else:
+        print("\n" + filename + " content: \n" + contents)
+
+
+files = ['cat.txt', 'dog.txt', 'not_exist.txt']
+for file in files:
+    open_files(file)
