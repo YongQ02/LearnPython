@@ -1,0 +1,27 @@
+Project Planning:
+In this project, I'll use a third-library modules "Pygame". To
+use modules, we need to install the Pygame module.
+
+First, we need to create an empty window to which we can later
+draw our game elements, such as ship and the alien. We can also
+set the background color and load a ship and alien image.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Game Description:
+In Alien Invasion, the player controls a ship that appears at
+the bottom center of the screen. The player can move the ship
+right and left using the arrow keys and shoot bullets using the
+'space bar'. When the game begins, a fleet of aliens fills the sky
+and moves across and down the screen. The player shoots and
+destroys the aliens. If the player shoots all the aliens, a new fleet
+appears that moves faster than the previous fleet. If any alien hits
+the player’s ship or reaches the bottom of the screen, the player
+loses a ship. If the player loses three ships, the game ends.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+About Pygame:
+The Pygame handling tasks like drawing image to the screen, it also
+can manage graphics, animation and even sounds. It is a strong
+and powerful modules.
